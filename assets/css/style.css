@@ -1,16 +1,19 @@
+/* body section */
 body {
-	background-color: rgb(7, 23, 53);
-    background-position: left top;
+	background-position: center center;
+	background-image: url("../images/crystback.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%
 }
-
+/*header section*/
 header {
     font-family: 'Piedra';
-	background-color: rgb(14, 68, 68);
-	color: black;
+	color: rgb(33, 173, 216);
 	padding: 20px 5px;
 	margin: 10px;
     width: 650px;
-    text-align: center;
+	text-align: center;
+	background-color: blueviolet;
 }
 /*title*/
 h1 {
@@ -23,8 +26,8 @@ h1 {
     font-weight: bold;
 	font-size: 18px;
 	height: 70px;
-	background-color: #ffd;
-	color: rgb(11, 95, 53);
+	background-color:blueviolet;
+	color: rgb(33, 173, 216);
 	padding: 20px 10px 10px 10px;
 	height: 250px;
 	width: 640px;
@@ -34,8 +37,9 @@ h1 {
 }
 /* Total number box */
 .goalBox {
-	background-color: #40bf80;
-	color: darkblue;
+	background-color: blueviolet;
+	text-align: center;
+	color: rgb(33, 173, 216);
 	font-size: 2em;
 	width: 150px;
 	height: 80px;
@@ -45,8 +49,8 @@ h1 {
 }
 /* Wins & loss boxes */
 .winBox {
-	background-color: lightblue;
-	color: darkblue;
+	background-color: blueviolet;
+	color: rgb(33, 173, 216);
 	width: 200px;
 	height: 80px;
 	padding: 5px;
@@ -59,20 +63,18 @@ h1 {
 	clear: both;
 	position: relative;
 	margin: 0 auto;
-    display: inline-block;
     float: left;
 }
-
 /* Crystal images size */
 .crystalImage {
-	width: 80px;
+	width: 148px;
 	height: 80px;
-  	margin: 10px;
+	margin: 10px;
 }
 /* Crystal value accumulator box */
 .totalLit, .tallyBox {
-	background-color: #083f3f;
-	color: #fff;
+	background-color: blueviolet;
+	color: rgb(33, 173, 216);
 	width: 200px;
 }
 
@@ -82,7 +84,7 @@ h1 {
 	text-align: left;
 	margin: 120px 0 0 10px;
 }
-
+/* total tally box section */
 .tallyBox {
 	font-size: 2em;
 	padding: 10px 10px 50px 10px;

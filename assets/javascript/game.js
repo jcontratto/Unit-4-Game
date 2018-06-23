@@ -88,5 +88,5 @@ $(document).ready(function() {
             gameLost();
         }
     });
-    //need to have reset after you win or lose, keeps adding onto to same score 
+    //need to have reset after you win or lose, keeps adding onto to same 
 });

@@ -1,0 +1,90 @@
+body {
+	background-color: rgb(7, 23, 53);
+    background-position: left top;
+}
+
+header {
+    font-family: 'Piedra';
+	background-color: rgb(14, 68, 68);
+	color: black;
+	padding: 20px 5px;
+	margin: 10px;
+    width: 650px;
+    text-align: center;
+}
+/*title*/
+h1 {
+	font-size: 50px;
+	font-weight: bold;
+}
+/*Game directions  */
+.game-info {
+    font-family: 'Piedra';
+    font-weight: bold;
+	font-size: 18px;
+	height: 70px;
+	background-color: #ffd;
+	color: rgb(11, 95, 53);
+	padding: 20px 10px 10px 10px;
+	height: 250px;
+	width: 640px;
+	line-height: 1.2em;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+/* Total number box */
+.goalBox {
+	background-color: #40bf80;
+	color: darkblue;
+	font-size: 2em;
+	width: 150px;
+	height: 80px;
+	padding: 5px;
+	margin-left: 10px;
+	float: left;
+}
+/* Wins & loss boxes */
+.winBox {
+	background-color: lightblue;
+	color: darkblue;
+	width: 200px;
+	height: 80px;
+	padding: 5px;
+	line-height: 1.5em;
+	margin-left: 180px;
+	margin-bottom: 10px;
+}
+/*  crystal function buttons */
+.crystalButtons {
+	clear: both;
+	position: relative;
+	margin: 0 auto;
+    display: inline-block;
+    float: left;
+}
+
+/* Crystal images size */
+.crystalImage {
+	width: 80px;
+	height: 80px;
+  	margin: 10px;
+}
+/* Crystal value accumulator box */
+.totalLit, .tallyBox {
+	background-color: #083f3f;
+	color: #fff;
+	width: 200px;
+}
+
+.totalLit {
+	padding: 10px;
+	height: 20px;
+	text-align: left;
+	margin: 120px 0 0 10px;
+}
+
+.tallyBox {
+	font-size: 2em;
+	padding: 10px 10px 50px 10px;
+	margin: 10px 0 10px 10px;
+}

@@ -1,12 +1,10 @@
 # Unit-4-Game
-Crystal Game
-
-JavaScript Assignment
+jQuery Assignment
 
 
 Overview
 
-In this assignment, you'll create one of two possible computer games: Word Guess or Psychic. These apps will run in the browser, and feature dynamically updated HTML and CSS powered by your JavaScript code.
+In this assignment, you'll create another fun and interactive game for web browsers. This time, your app must dynamically update your HTML pages with the jQuery library.
 
 
 Submission on BCS
@@ -19,45 +17,65 @@ Please submit both the deployed Github.io link to your homework AND the link to 
 Before You Begin
 
 
-Create a new GitHub repo called Word Guess Game or Psychic-Game, in accordance with the assignment you choose to complete. Then, clone it to your computer.
-Inside your local git repository, create an index.html.
-While still in your local git repo, create a directory called assets.
-cd your way into the assets folder, then make three additional folders: javascript, css and images.
+Create a new GitHub repo called unit-4-game, then clone it to your computer.
+Inside the unit-4-game folder, create an index.html file.
+
+Still inside the unit-4-game directory, make a folder called assets.
 
 
+Inside the assets directory, make three additional folders: javascript, css and images.
 
-In the javascript folder, make a file called game.js. Use the src attribute of the script tag to link to this file, rather than embedding the code directly in your HTML document.
+
+In the javascript folder, make a file called game.js.
 In the css folder, make a file called style.css.
-Also in the css folder, make a file called reset.css. Paste into it the code from the Meyerweb reset stylesheet. If you opt to use Bootstrap instead of writing your own CSS, skip this step, and simply include a link to Bootstrap via CDN.
-In the images folder, save whatever images you plan on using.
-
-
-├── assets
-|  ├── css
-|  |  └── style.css
-|  ├── images
-|  └── javascript
-|     └── game.js
-└── index.html
-
-Push the above changes to GitHub.
-Choose whichever game you'd like to build. Making the Psychic game will prove less challenging than coding Word Guess. However, as the challenge of the Word Guess exercise provides a more comprehensive review of this week's material, we suggest attempting that assignment first.
-Note: There's no shame if you'd prefer submitting Psychic—it's still a proper challenge.
-Push your selected game to Github Pages.
+In the css folder, make a file called reset.css. Paste into it the code found from the Meyerweb Reset.
+In the images folder, save any of the images you plan on using.
 
 
 
-Option One: Psychic Game (Basic)
+
+Set up your repository to deploy to Github Pages.
+Push the above changes to GitHub. 
+Choose whichever game you want to make from the choices below. The CrystalsCollector game is the recommended option, but if you are looking for an extra hard challenge then take a stab at the Star Wars exercise. (Note: Only choose the Star Wars Exercise if you are feeling very comfortable with the material covered in class. The Crystal Collector activity is plenty challenging enough!).
+
+
+
+Option One: CrystalsCollector Game (Recommended)
 
 
 
 
 Watch the demo.
-You're going to make a game just like the one in the video. Essentially, the app randomly picks a letter, and the user has to guess which letter the app chose. Put the following text on your page:
-Guess what letter I'm thinking of
-Wins: (# of times the user has guessed the letter correctly)
-Losses: (# of times the user has failed to guess the letter correctly after exhausting all guesses)
-Guesses Left: (# of guesses left. This will update)
-Your Guesses So Far: (the specific letters that the user typed. Display these until the user either wins or loses.)
-When the player wins, increase the Wins counter and start the game over again (without refreshing the page).
-When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins).
+The player will have to guess the answer, just like in Word Guess. This time, though, the player will guess with numbers instead of letters. 
+Here's how the app works:
+
+
+
+There will be four crystals displayed as buttons on the page.
+The player will be shown a random number at the start of the game.
+
+When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
+
+
+Your game will hide this amount until the player clicks a crystal.
+When they do click one, update the player's score counter.
+
+
+The player wins if their total score matches the random number from the beginning of the game.
+The player loses if their score goes above the random number.
+
+The game restarts whenever the player wins or loses.
+
+
+When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
+
+
+The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
+
+
+
+Option 1 Game design notes
+
+
+The random number shown at the start of the game should be between 19 - 120.
+Each crystal should have a random hidden value between 1 - 12.

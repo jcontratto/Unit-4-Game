@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     /* random number between 19 and 120 */
     var goalScore = Math.floor((Math.random() * 101) + 19);
-         $("#goalNum").text(goalScore);
+         $("#NumberReach").text(goalScore);
     
     /* random number for each crystal between 1 and 12 */
     var crystalVal1 = Math.floor(Math.random()*11+1)
@@ -16,18 +16,18 @@ $(document).ready(function() {
 
     $("#gamesWon").text(totWins);
     $("#gamesLost").text(totLoss);
-    $("#tallyNum").text(userValue);
+    $("#NumberTotal").text(userValue);
         
     /* reset variables for a new game */
     function newGame() {
         goalScore = Math.floor((Math.random() * 102) + 19);
-        $("#goalNum").text(goalScore);
+        $("#NumberReach").text(goalScore);
             crystalVal1 = Math.floor(Math.random()*11+1);
             crystalVal2 = Math.floor(Math.random()*11+1);
             crystalVal3 = Math.floor(Math.random()*11+1);
             crystalVal4 = Math.floor(Math.random()*11+1);
             userAccum = 0;
-        $("#tallyNum").text(userValue);
+        $("#NumberTotal").text(userValue);
     };
 
     function gameWon() {
@@ -46,7 +46,7 @@ $(document).ready(function() {
 
     $("#buttonBlue").on("click", function() {
         userValue = userValue + crystalVal1;
-        $("#tallyNum").text(userValue);
+        $("#NumberTotal").text(userValue);
         if (userValue === goalScore) {
             gameWon();
         }
@@ -58,7 +58,7 @@ $(document).ready(function() {
 
     $("#buttonRed").on("click", function() {
         userValue = userValue + crystalVal2;
-        $("#tallyNum").text(userValue);
+        $("#NumberTotal").text(userValue);
         if (userValue === goalScore) {
             gameWon();
         }
@@ -69,7 +69,7 @@ $(document).ready(function() {
 
     $("#buttonYellow").on("click", function() {
         userValue = userValue + crystalVal3;
-        $("#tallyNum").text(userValue);
+        $("#NumberTotal").text(userValue);
         if (userValue === goalScore) {
             gameWon();
         }
@@ -80,7 +80,7 @@ $(document).ready(function() {
 
     $("#buttonGreen").on("click", function() {
         userValue = userValue + crystalVal4;
-        $("#tallyNum").text(userValue);
+        $("#NumberTotal").text(userValue);
         if (userValue === goalScore) {
             gameWon();
         }
